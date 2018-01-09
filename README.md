@@ -9,6 +9,8 @@ Several developers use it to create free/paid or full/demo versions, releasing c
 
 In your app/build.gradle,add the below code
 
+
+
 productFlavors {
     customer {
       applicationIdSuffix ".customer"
@@ -22,12 +24,11 @@ productFlavors {
     }
  }
  
- After adding the above code, sync your gradle and build it once.
+ After adding the above code, sync your gradle and build it once.Your 
  
- 
- 
- 
- 
+ ![Uploading Screen Shot 2018-01-09 at 1.19.45 PM.png…]()
+
+
  You can now create sourceSets folders app/src/customer/ and app/src/admin/ parallel to app/src/main/. 
  The common classes and resources can stay in app/src/main while the flavor dependent code can go in the
  respective folders. 
@@ -49,7 +50,7 @@ productFlavors {
       resources.srcDirs = ['src/admin/resources',]
     }
    }
-      
+    
       
 When you create a new build variant, Android Studio doesn't create the source set directories for you,
 but it does give you a few options to help you.
@@ -81,10 +82,4 @@ Enter the name for the XML file or keep the default name.
 From the drop-down menu next to Target Source Set, select customer.
 Click Finish.
 
-
-
- 
- 
- 
- 
 
