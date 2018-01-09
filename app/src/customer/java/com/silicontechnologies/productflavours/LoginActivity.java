@@ -1,3 +1,5 @@
+package com.silicontechnologies.productflavours;
+
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -11,6 +13,7 @@ public class LoginActivity extends AppCompatActivity {
 
   @Override protected void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    Toast.makeText(this, "Customer Login Activity", Toast.LENGTH_SHORT).show();
+    setContentView(R.layout.activity_customer_login);
+    Toast.makeText(this, "Admin Login Activity", Toast.LENGTH_SHORT).show();
   }
 }

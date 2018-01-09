@@ -13,6 +13,7 @@ public class LoginActivity extends AppCompatActivity {
 
   @Override protected void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_admin_login);
     Toast.makeText(this, "Admin Login Activity", Toast.LENGTH_SHORT).show();
   }
 }
