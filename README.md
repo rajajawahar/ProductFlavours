@@ -10,7 +10,7 @@ Several developers use it to create free/paid or full/demo versions, releasing c
 In your app/build.gradle,add the below code
 
 
-
+```
 productFlavors {
     customer {
       applicationIdSuffix ".customer"
@@ -23,10 +23,12 @@ productFlavors {
       dimension "module"
     }
  }
+ ```
  
  After adding the above code, sync your gradle and build it once.Your 
  
- ![Uploading Screen Shot 2018-01-09 at 1.19.45 PM.png…]()
+<img width="416" alt="screen shot 2018-01-09 at 1 19 45 pm" src="https://user-images.githubusercontent.com/16591515/34710230-767f4be0-f540-11e7-9d4e-90c02b9fe03c.png">
+
 
 
  You can now create sourceSets folders app/src/customer/ and app/src/admin/ parallel to app/src/main/. 
@@ -34,6 +36,7 @@ productFlavors {
  respective folders. 
  
  
+ ```
   sourceSets {
     main {
       jniLibs.srcDir 'src/main/libs'
@@ -43,13 +46,13 @@ productFlavors {
       java.srcDirs = ['src/customer/java',]
       resources.srcDirs = ['src/customer/resources',]
      }
-
     admin {
       manifest.srcFile 'src/admin/AndroidManifest.xml'
       java.srcDirs = ['src/admin/java',]
       resources.srcDirs = ['src/admin/resources',]
     }
    }
+ ```
     
       
 When you create a new build variant, Android Studio doesn't create the source set directories for you,
@@ -82,4 +85,7 @@ Enter the name for the XML file or keep the default name.
 From the drop-down menu next to Target Source Set, select customer.
 Click Finish.
 
+Thats all..
+
+Thanks for reading
 
